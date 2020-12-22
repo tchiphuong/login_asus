@@ -1,0 +1,93 @@
+$color-red: #b30c26;
+$color-black: #222222;
+$color-white: #f6fffa;
+$color-grey: #ccc;
+
+*{
+    padding: 0;
+    margin: 0;
+    // box-sizing: border-box;
+}
+
+.__container{
+    padding: 20px;
+    color: $color-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    .__form{
+        background: $color-black;
+        padding: 20px;
+        box-shadow: 3px 3px 6px rgb(54, 49, 49);
+        // width: 500p;
+            .form{
+                .form__group{
+                    display: flex;
+                    flex-direction: column;
+                    height: 60px;
+                    margin: 8px auto;
+                    input{
+                        width: 100%;
+                        border: none;
+                        background: none;
+                        height: 50px;
+                        border-bottom: 1px solid $color-grey;
+                        color: $color-red;
+                        outline: none;
+                    }
+            
+                    input:focus{
+                        border-bottom: 3px solid $color-red;
+                    }
+            
+                    .btn{
+                        background: $color-red;
+                        color: $color-grey;
+                        height: 50px;
+                        box-sizing: border;
+                        border-radius: 0px;
+                    }
+            
+                    .btn:hover{
+                        background: rgb(131, 9, 9);
+                    }
+                }
+            }
+        .__link{
+            margin-top: 20px;
+            a{
+                color: $color-red;
+                text-decoration: none;
+                margin-right: 20px;
+            }
+        }
+        .__social_group{
+            border-top: 1px solid $color-grey;
+            margin-top: 20px;
+            padding-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .__btn{
+                background-color: transparent;
+                width: 100%;
+                color: $color-grey;
+                height: 50px;
+                border-radius: 0px;
+                border: 3px solid $color-red;
+                margin-top: 20px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                
+                .__icon{
+                    height: 69%;
+                    color: red;
+                }
+            }
+        }
+    }
+}   

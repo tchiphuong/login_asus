@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.__container {
+  padding: 20px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.__container .__form {
+  background: #222222;
+  padding: 20px;
+  box-shadow: 3px 3px 6px #363131;
+}
+
+.__container .__form .form .form__group {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  margin: 8px auto;
+}
+
+.__container .__form .form .form__group input {
+  width: 100%;
+  border: none;
+  background: none;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  color: #b30c26;
+  outline: none;
+}
+
+.__container .__form .form .form__group input:focus {
+  border-bottom: 3px solid #b30c26;
+}
+
+.__container .__form .form .form__group .btn {
+  background: #b30c26;
+  color: #ccc;
+  height: 50px;
+  box-sizing: border;
+  border-radius: 0px;
+}
+
+.__container .__form .form .form__group .btn:hover {
+  background: #830909;
+}
+
+.__container .__form .__link {
+  margin-top: 20px;
+}
+
+.__container .__form .__link a {
+  color: #b30c26;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.__container .__form .__social_group {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.__container .__form .__social_group .__btn {
+  background-color: transparent;
+  width: 100%;
+  color: #ccc;
+  height: 50px;
+  border-radius: 0px;
+  border: 3px solid #b30c26;
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.__container .__form .__social_group .__btn .__icon {
+  height: 69%;
+  color: red;
+}
